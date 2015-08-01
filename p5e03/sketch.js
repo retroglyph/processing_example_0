@@ -12,7 +12,7 @@ function draw() {
     if (col > 255 || col < 0) {
         sp *= -1;
     }
-    fill(255-col, col, col/div);
+    fill(255-(col+=sp), col, col/div, 50);
     ellipse(175, 320, 175 + col/div, 320 + 76 - col/div);
 }
 
